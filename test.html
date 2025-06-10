@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotlight Cursor Effect</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+
+        }
+
+        body {
+            background: rgb(138, 119, 58);
+            background-size: cover;
+        }
+
+        .spotlight {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            background: radial-gradient(circle 100px at 50% 50%, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+            mix-blend-mode: darken;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="spotlight"></div>
+
+    <script>
+        const spotlight = document.querySelector('.spotlight');
+
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            spotlight.style.background = `radial-gradient(circle 100px at ${x}px ${y}px, transparent 0%, rgba(0, 0, 0, 0.3) 100%)`;
+        });
+    </script>
+
+
+</body>
+
+</html>

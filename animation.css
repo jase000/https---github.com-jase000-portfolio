@@ -1,0 +1,11 @@
+.spotlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: radial-gradient(circle 100px at 50% 50%, white 0%, rgba(0, 0, 0, 0) 0%);
+  mix-blend-mode: screen;
+  z-index: -0;
+}
