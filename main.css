@@ -35,21 +35,6 @@ html {
 
 /* ---------- ANIMATIONS --------- */
 
-/* .text_glow:hover {
-  color: #f65555; 
-  text-shadow: 0 0px 0px #f65555, 0 0 0px #f65555, 0 0 0px #f65555, 0 0 0px #f65555;
-  animation: SlowGlowPulse 2s ease-in ;
-}
-
-@keyframes SlowGlowPulse {
-  0% {
-    text-shadow: 0 0px 0px #f65555, 0 0 0px #f65555, 0 0 0px #f65555, 0 0 0px #f65555;
-  }
-  100% {
-    text-shadow: 0 1px 5px #f65555, 0 0 6px #f65555, 0 0 7px #f65555, 0 0 10px #f65555;
-  }
-} */
-
 .text_glow {
   color: var(--red);
   text-shadow: 0 0 0px transparent;
@@ -92,25 +77,34 @@ h3 {
 
 p {
   font-family: "inter";
-  font-weight: 700;
+  font-weight: 600;
   color: var(--white);
-  font-size: 70%;
+  font-size: 0.95rem;
+  line-height: 1.15rem;
 }
 
 .jakob {
   position: absolute;
-  top: 30%;
+  top: 29%;
   left: 15%;
   font-size: 130%;
   z-index: 2;
 }
 
+.portfolio {
+  font-size: 410%;
+}
+
 .introtext {
   position: absolute;
-  top: 50%;
-  left: 35%;
+  top: 41%;
+  left: 37%;
   width: 50%;
-  font-size: 90%;
+  font-size: 70%;
+}
+
+.introtext p {
+  font-size: 0.75rem;
 }
 
 .overview {
@@ -137,6 +131,9 @@ p {
   top: 80%;
   font-size: 1.5rem;
   text-decoration: none;
+  /* border: solid 2px var(--white); */
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
 .rect {
@@ -155,7 +152,11 @@ p {
 .colorpage {
   top: 18%;
   left: 13%;
-  font-size: 420%;
+  font-size: 400%;
+}
+
+.colorpage_firsttext {
+  font-size: 310%;
 }
 
 .colorpage_grid {
@@ -164,8 +165,12 @@ p {
   grid-template-columns: 1fr;
   place-items: center;
   top: 30%;
-  gap: 10px;
+  gap: 15px;
   padding-inline: 14%;
+}
+
+.first_image {
+  margin-bottom: 0.7rem;
 }
 
 .gamepage_grid {
@@ -231,6 +236,12 @@ p {
   align-items: center;
   text-align: center;
   text-decoration: none;
+  transition: box-shadow, text-shadow 0.2s ease;
+}
+
+.cta_button:hover {
+  text-shadow: 0 0 9px #f65555, 0 0 8px #f65555, 0 0 0px #000000;
+  box-shadow: 0 0 5px #f65555, 0 0 2px #f7ffff, 0 0 0px #000000;
 }
 
 .grid_div {
@@ -250,7 +261,7 @@ p {
   position: absolute;
   object-position: top;
   margin-top: 3%;
-  height: 150vh;
+  height: 100vh;
 }
 
 .front_rect {
@@ -345,7 +356,7 @@ p {
   .introtext p {
     font-size: 0.8rem;
     font-weight: 700;
-    word-wrap: break-word; /* ensures long words break if needed */
+    word-wrap: break-word;
   }
   .overview {
     top: 65%;
