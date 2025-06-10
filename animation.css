@@ -9,3 +9,9 @@
   mix-blend-mode: screen;
   z-index: -0;
 }
+
+@media (max-width: 768px) {
+  #sketch-container {
+    display: none;
+  }
+}

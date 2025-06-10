@@ -5,12 +5,12 @@
 }
 
 .menu-nav {
-  position: absolute; /* or use fixed if you want it always visible on scroll */
+  position: absolute;
   top: 0px;
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between; /* or center / flex-end */
+  justify-content: space-between;
   padding: 0rem 0rem;
   z-index: 100;
 }
@@ -36,7 +36,7 @@
 
 .nav-links a:hover,
 .glowPulse:hover {
-  color: var(--white); /* or something vibrant like #98E448 */
+  color: var(--white);
   text-shadow: 0 1px 10px var(--lightblue), 0 0 30px var(--lightblue), 0 0 70px var(--lightblue), 0 0 90px var(--lightblue);
   animation: glowPulse 0.8s infinite alternate;
 }
@@ -58,8 +58,6 @@
   text-decoration: none;
 }
 
-/* Burger icon hidden by default */
-
 .burger {
   display: none;
   flex-direction: column;
@@ -79,9 +77,9 @@
   .nav-links {
     display: none;
     position: absolute;
-    top: 80px; /* or whatever height fits below your header */
+    top: 80px;
     right: 20px;
-    width: 200px; /* control width */
+    width: 200px;
     background: linear-gradient(-40deg, #2b2393, var(--blue));
     border: solid 3px;
     border-radius: 1px;
@@ -150,6 +148,6 @@
   }
 
   .burger {
-    display: none; /* hide burger on desktop */
+    display: none;
   }
 }
