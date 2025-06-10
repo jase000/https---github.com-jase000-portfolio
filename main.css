@@ -156,7 +156,7 @@ p {
 }
 
 .colorpage_firsttext {
-  font-size: 310%;
+  font-size: 300%;
 }
 
 .colorpage_grid {
@@ -199,9 +199,8 @@ p {
 }
 
 .colorpagetext2 {
-  padding-right: 3%;
-  padding-left: 10%;
   margin-bottom: 3%;
+  padding-inline: 3%;
 }
 
 .colorsubhead {
@@ -260,7 +259,7 @@ p {
 .about_rect {
   position: absolute;
   object-position: top;
-  margin-top: 3%;
+  margin-top: 6%;
   height: 100vh;
 }
 
